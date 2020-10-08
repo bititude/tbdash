@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SideBar from './Components/Common/SideBar/SideBar'
+import StaffActivities from './Components/Widgets/StaffActivities/StaffActivities'
+import SystemHealth from './Components/Widgets/SystemHealth/SystemHealth'
+import AuditingStatus from './Components/Widgets/AuditingStatus/AuditingStatus'
+import SortableList from './Components/Sortable/Sortable'
+import InventoryStatus from './Components/Widgets/InventoryStatus/InventoryStatus';
+import ManpowerIssues from './Components/Widgets/ManpowerIssues/ManpowerIssues';
+import Incidents from './Components/Widgets/Incidents/Incidents'
+import Compliance from './Components/Widgets/Compliance/Compliance';
+import Todo from './Components/Widgets/ToDo/ToDo';
+
+var items = [      
+  <StaffActivities />,
+  <SystemHealth />,
+  <AuditingStatus />,
+  <InventoryStatus />,
+  <ManpowerIssues />,
+  <Incidents />,
+  <Compliance />,
+  <Todo />
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='d-flex flex-wrap' style={{minHeight: "100vh"}}>
+      <SideBar />
+      <div style={{ flex: 1, overflow: "auto" }}>        
+          <SortableList items={items} />        
+      </div>
     </div>
   );
 }

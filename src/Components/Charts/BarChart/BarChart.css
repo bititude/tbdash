@@ -1,0 +1,20 @@
+pre {
+    font-size: 7em;
+}
+.tick line {
+    stroke: #DADADA;
+    stroke-dasharray: 2;
+}
+.tick text {
+    fill: #635F5D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.mark {
+    fill: #01D09F;
+}
+.axis-label {
+    font-size: 2.5em;
+    fill: #635F5D;
+}

@@ -1,0 +1,182 @@
+#sidebar {
+    width: 260px;
+    /* height: calc(100vh - 135px); */
+    /* height: 100vh; */
+    background-color: #3b3b3b;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    /* margin: 40px; */
+    margin-right: 0;
+    /* border-radius: 5px; */
+    /* margin-top: 115px; */
+  }
+  #sidebar.open {
+    width: 70px;
+  }
+  #sidebar.mobile {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    z-index: 1021;
+    width: 260px !important;
+    left: -260px;
+  }
+  #sidebar.mobile.open {
+    left: 0;
+  }
+  #sidebar .expand-switch {
+    background-color: transparent;
+    border: 0;
+    margin-right: 1.75rem;
+    margin-top: 0.75rem;
+    font-size: 0.675rem;
+    transform-origin: center;
+    transition: all 300ms ease;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  #sidebar .mobile-back {
+    margin-top: 1.25rem;
+    margin-left: 1.75rem;
+    display: inline-block;
+    color: #fff;
+  }
+  #sidebar.open .expand-switch {
+    transform: rotate(180deg);
+    margin-right: 1.5rem;
+  }
+  #sidebar .menu-items {
+    width: 100%;
+    overflow: auto;
+  }
+  #sidebar.open .menu-items {
+    overflow: visible;
+  }
+  #sidebar .footer {
+    margin-top: auto;
+  }
+  ul.nav {
+    width: 100%;
+    color: #ffffff;    
+    font-weight: 500;
+    flex-wrap: nowrap;
+  }
+  ul.nav li.nav-item {
+    position: relative;
+    width: 100%;
+  }
+  ul.nav li.nav-item:hover {
+    background-color: #2c2c2c;
+  }
+  ul.nav li.nav-item .nav-link {
+    padding: 0.75rem 2rem 0.75rem 1.75rem;
+    border-left: 0.25rem solid transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    color: #ffffff;
+  }
+  ul.nav li.nav-item .tracbot-nav-link {
+    padding: 0.75rem 2rem 0.75rem 1.6rem;
+  }
+  ul.nav li.nav-item .tracbot-nav-link .logo {
+    height: 1.1rem;
+    margin-left: 0px;
+    padding-right: 0.1rem;
+  }
+  ul.nav li.nav-item .nav-link span.nav-text {
+    display: flex;
+    flex: 1;
+    opacity: 1;
+    transition: all 500ms ease;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  ul.nav li.nav-item .nav-link.active-nav {
+    border-left-color: #558dca;
+    background-color: #2c2c2c;
+  }
+  ul.nav li.nav-item .nav-link.opened {
+    background-color: #313131;
+  }
+  ul.nav li.nav-item .nav-link i[class^="icon-"] {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    width: 2rem;
+  }
+  ul.nav li.nav-item .nav-link span.icon-badge {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    margin-left: 0.375rem;
+    display: inline-block;
+  }
+  ul.nav li.nav-item .nav-link img {
+    float: right;
+    margin-left: auto;
+    transform-origin: center;
+    transition: all 0.5s ease;
+  }
+  ul.nav li.nav-item .nav-link.opened img {
+    transform: rotate(180deg);
+  }
+  ul.nav li.nav-item ul.sub-menu {
+    background-color: #313131;
+    transition: all 300ms ease-in-out;
+  }
+  #sidebar.open ul.nav li.nav-item .nav-link {
+    padding-left: 1.25rem;
+  }
+  #sidebar.open ul.nav li.nav-item .tracbot-nav-link {
+    padding-left: 1rem;
+  }
+  #sidebar.open:not(.mobile) ul.nav li.nav-item .nav-link span.nav-text {
+    opacity: 0;
+  }
+  #sidebar.open:not(.mobile) ul.nav li.nav-item ul.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: fit-content;
+    z-index: 1;
+  }
+  #sidebar.open:not(.mobile)
+    ul.nav.sub-menu.show
+    li.nav-item
+    .nav-link
+    span.nav-text {
+    opacity: 1;
+  }
+  #sidebar ul.sub-menu li.nav-item a.nav-link {
+    padding-left: 2.75rem;
+  }
+  #sidebar ul.sub-menu li.nav-item .nav-link i[class^="icon-"] {
+    font-size: 1rem;
+    width: 1.25rem;
+    margin-right: 0.75rem;
+    justify-content: center;
+  }
+  
+  #sidebar .url-arrow-container {
+    width: 1rem;
+    background-color: #fff;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  #sidebar .url-arrow {
+    font-size: 0.4rem;
+    color: #2c2c2c;
+    font-weight: bold;
+  }
+  

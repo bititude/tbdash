@@ -1,0 +1,22 @@
+#staff_activities .label {    
+    color: #494949;
+    height: 1.5rem;
+}
+#staff_activities .tasks .label {
+    padding-right: 2.5rem;
+  }
+  #staff_activities .tasks .label span {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+  }
+  #staff_activities .tasks .total {
+    font-size: 1.125rem;
+    color: #494949;
+    font-weight: bold;
+  }
+  #staff_activities .tasks .completed {
+    font-size: 0.875rem;
+    color: #a2a2a2;
+  }

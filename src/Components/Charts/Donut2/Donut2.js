@@ -6,11 +6,12 @@ const renderDonut = data => {
     const width = 440
     const height = 350
     const thickness = 40
+    const duration = 750
 
     const radius = Math.min(width, height) / 3
     const color = d => d.color
 
-    const svg = d3.select("#donut")
+    const svg = d3.select("#donut2")
         .append('svg')
         .attr('width', width)
         .attr('height', height)
@@ -20,8 +21,7 @@ const renderDonut = data => {
     
     const arc = d3.arc()
         .innerRadius(radius - thickness)
-        .outerRadius(radius)
-        .cornerRadius(thickness/2)
+        .outerRadius(radius)        
     
     const pie = d3.pie()
         .value(d => d.percent)
@@ -37,11 +37,11 @@ const renderDonut = data => {
 
 }
 
-const Donut = ({data}) => {
+const Donut2 = ({data}) => {
     useEffect(() => {
         renderDonut(data)
     }, [])    
-    return <div id="donut"></div>
+    return <div id="donut2"></div>
 }
 
-export default Donut;
+export default Donut2;

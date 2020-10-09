@@ -1,12 +1,12 @@
 import React from 'react'
+import ChartArea from '../../Charts/ChartArea/ChartArea'
 import WidgetHeader from '../../Common/WidgetHeader/WidgetHeader'
-import image from './manpower.png'
 
 const ManpowerIssues = () => {
     return (
-        <div style={{flex: 2, width: 430}}>
-            {/* <img src={image} alt="system_healt" /> */}
+        <div style={{flex: 2, width: 437}}>            
             <WidgetHeader label="Manpower Issues" description="Description to be defined" />
+            <ChartArea />
         </div>
     )
 }

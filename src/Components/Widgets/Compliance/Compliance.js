@@ -1,10 +1,10 @@
 import React from 'react'
-import image from './compliance.png'
+import WidgetHeader from '../../Common/WidgetHeader/WidgetHeader'
 
 const Compliance = () => {
     return (
-        <div style={{flex: 2}}>
-            <img src={image} alt="system_healt" />
+        <div style={{flex: 2, width: 650}}>            
+            <WidgetHeader label="Compliance" description="Description to be defined" />
         </div>
     )
 }

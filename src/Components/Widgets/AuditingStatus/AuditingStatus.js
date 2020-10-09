@@ -1,7 +1,6 @@
 import React from 'react'
 import VennDiagram from '../../Charts/VennDiagram/VennDiagram'
 import WidgetHeader from '../../Common/WidgetHeader/WidgetHeader'
-import image from './auditing.png'
 
 const AuditingStatus = () => {
     return (

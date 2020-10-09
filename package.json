@@ -10,6 +10,7 @@
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-donut-chart": "^1.1.8",
     "react-motion": "^0.5.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",

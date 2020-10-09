@@ -40,10 +40,10 @@ const ChartArea = () => {
     return (
         <AreaChart
           width={437}
-          height={350}
+          height={400}
           data={data}
           margin={{
-            top: 15, right: 50, left: 10, bottom: 10,
+            top: 15, right: 50, left: 0, bottom: 10,
           }}
         >
           <defs>
@@ -63,7 +63,7 @@ const ChartArea = () => {
           <CartesianGrid strokeDasharray="3 3" vertical={false}/>
           <XAxis dataKey="name" tick={<NotAxisTickButLabel/>} tickLine={false} tickMargin={12} axisLine={false} />
           <YAxis tickLine={false} tick={<NotAxisTickButLabel/>} tickMargin={12} axisLine={{stroke: "#DADADA", strokeDasharray: 2}}/>
-          {/* <Tooltip /> */}
+          <Tooltip />
           <Area type="monotone" dataKey="Below 10%" stackId="3" stroke="url(#color10)" fillOpacity={1} fill="url(#color10)" />
           <Area type="monotone" dataKey="10%-20%" stackId="2" stroke="url(#color10-20)" fillOpacity={1} fill="url(#color10-20)" />
           <Area type="monotone" dataKey="20%-30%" stackId="1" stroke="url(#color20-30)" fillOpacity={1} fill="url(#color20-30)" />

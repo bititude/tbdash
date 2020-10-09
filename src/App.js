@@ -23,7 +23,7 @@ var items = [
 
 function App() {
   return (
-    <div className='d-flex flex-wrap' style={{minHeight: "100vh"}}>
+    <div className='d-flex flex-row flex-wrap'>
       <SideBar />
       <div style={{ flex: 1, overflow: "auto" }}>        
           <SortableList items={items} />        

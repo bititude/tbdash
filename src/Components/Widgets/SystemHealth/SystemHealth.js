@@ -4,7 +4,7 @@ import WidgetHeader from '../../Common/WidgetHeader/WidgetHeader'
 
 const SystemHealth = () => {
     return (
-        <div style={{display: "flex", flexDirection:"column"}}>            
+        <div style={{display: "flex", flexDirection:"column", flexBasis:"fill"}}>            
             <WidgetHeader label="System Health" description = "Description to be defined" />
             <BarChart />
         </div>
